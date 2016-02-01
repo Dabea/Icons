@@ -1,0 +1,107 @@
+/* List Icon   */
+.list-icon{
+    position: relative;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    width: 15px;
+    height: 20px;
+    overflow: auto;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    text-align: center;
+}
+/* Outter Lines */
+.list-icon:before{
+    position: absolute;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-radius: 0px;
+    content: ' ';
+    width: 76%;
+    height: 65%;
+    top:15%;
+    right:9.8%;
+}
+/* Inner Lines */
+.list-icon:after{
+    position: absolute;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-radius: 0px;
+    display: block;
+    content: '';
+    width: 76%;
+    height: 28%;
+    top:33%;
+    right:9.8%;
+}
+
+/* ===========Complete Icon======= */
+/* Square */
+.complete-icon{
+    height: 10px;
+    width: 10px;
+    border: 1px solid #000000;
+    display: block;
+    float: left;
+    position: relative;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+/* Check Mark */
+.complete-icon:before{
+    border-right: 3px solid green;
+    border-bottom: 3px solid green;
+    margin-top: -10px;
+    margin-left: 0px;
+    transform: rotate(45deg);
+    content: '';
+    display: block;
+    height: 200%;
+    width: 125%;
+
+}
+
+
+/*========== Calandar Month ================ */
+
+.calandar-month-icon{
+    border: 1px solid #000000;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    position: relative;
+    float: left;
+    margin-right: 5px;
+    display: block;
+}
+/* Adds the 31 and centers it */
+.calandar-month-icon:before{
+     padding-left: 25%;
+    font-size: 90%;
+     content: '31';
+    margin-top: -3px;
+    position: absolute;
+    display: block;
+
+ }
+/* adds the bottom colored block and the month */
+.calandar-month-icon:after{
+    height: 50%;
+    width: 100%;
+    font-size: 75%;
+    border-radius: 0px 0px 5px 5px ;
+    border-bottom: 1px solid #000000;
+    padding-left: 17%;
+    margin-top: 52%;
+    background-color: red;
+    overflow: hidden;
+    display: block;
+    content: 'Jan';
+    position: absolute;
+}
+/* Optional Moth Changer  if Current Month is wanted*/
+.calandar-feb-icon.calandar-month-icon:after{
+    content: 'Feb';
+}
